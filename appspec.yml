@@ -5,10 +5,10 @@ files:
     destination: /appdir
 hooks:
   ApplicationStop:
-    - location: appdir/stop.sh
+    - location: /appdir/scripts/stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: appdir/start.sh
+    - location: /appdir/scripts/start.sh
       timeout: 300
       runas: root
