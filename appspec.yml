@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /appdir
+    destination: /appdir/appdata
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
