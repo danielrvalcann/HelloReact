@@ -1,5 +1,5 @@
 #!/bin/bash
-nomeApp="<danielr-app>"
+nomeApp="danielr-app"
 cd /appdir
 npm install
 
