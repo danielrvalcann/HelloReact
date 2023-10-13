@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /appdir
 hooks:
- AfterInstall:
+  AfterInstall:
     - location: scripts/permissions.sh
       timeout: 300
       runas: root
