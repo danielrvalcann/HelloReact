@@ -1,6 +1,6 @@
 #!/bin/bash
 nomeApp="danielr-app"
-cd /appdir
+cd /appdir/appdata
 npm install
 
 sudo supervisord
