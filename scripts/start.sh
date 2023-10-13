@@ -1,8 +1,8 @@
 #!/bin/bash
 nomeApp="danielr-app"
 cd /appdir/src
-npm install
-npm start
+sudo npm install
+sudo npm start
 
 sudo supervisorctl reread
 sudo supervisorctl update
