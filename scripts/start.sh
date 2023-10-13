@@ -1,7 +1,9 @@
 #!/bin/bash
 nomeApp="danielr-app"
-cd /appdir
+cd /appdir/src
 npm install
+npm start
 
-sudo supervisord
+sudo supervisorctl reread
+sudo supervisorctl update
 sudo supervisorctl start $nomeApp

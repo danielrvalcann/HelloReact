@@ -4,11 +4,15 @@ files:
   - source: /
     destination: /appdir
 hooks:
+ AfterInstall:
+    - location: scripts/permissions.sh
+      timeout: 300
+      runas: root
   ApplicationStop:
-    - location: appdir/danielr-app/stop.sh
+    - location: scripts/stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: appdir/danielr-app/start.sh
+    - location: scripts/start.sh
       timeout: 300
       runas: root
