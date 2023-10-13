@@ -1,6 +1,6 @@
 #!/bin/bash
 nomeApp="danielr-app"
-cd /appdir/src
+cd /appdir
 sudo npm install
 sudo npm start
 
