@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /appdir/appdata/
+    destination: /appdir/appdata
 hooks:
  AfterInstall:
     - location: scripts/permissions.sh
